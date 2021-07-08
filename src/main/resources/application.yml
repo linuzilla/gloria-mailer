@@ -1,0 +1,18 @@
+application:
+  template: classpath:/META-INF/email.eml
+  data-file: classpath:/META-INF/people.xlsx
+  email-field: email
+  name-field: name
+  test-only: true
+  debug: true
+  recipient-when-debug: debugger@email.on.earth
+smtp:
+  from: someone@somewhere.on.mars
+  from-name: 'Your name'
+  reply-to: another@somewhere.on.venus
+  reply-to-name: 'Her name'
+  use-reply-to: true
+  auth: false
+  starttls: false
+  host: the.smtp.host.name
+  port: 25
